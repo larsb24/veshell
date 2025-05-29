@@ -79,6 +79,7 @@ dependencies:
   flex_color_picker: ^3.7.0
   defer_pointer: ^0.0.2
   
+  flutter_riverpod: any
 dev_dependencies:
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is

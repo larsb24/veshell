@@ -112,19 +112,13 @@ class MonitorStateViewer extends HookConsumerWidget {
                                 value: screenConfiguration.flex.toString(),
                                 property: 'flex',
                               ),
-                              if (screenConfiguration.screenId != null)
-                                ExpandableDataRow(
-                                  isExpanded: true,
-                                  property: screenConfiguration.screenId!,
-                                  builder: (context) => ScreenStateViewer(
-                                    screenId: screenConfiguration.screenId!,
-                                  ),
+                              ExpandableDataRow(
+                                isExpanded: true,
+                                property: screenConfiguration.screenId,
+                                builder: (context) => ScreenStateViewer(
+                                  screenId: screenConfiguration.screenId,
                                 ),
-                              if (screenConfiguration.screenId == null)
-                                const DataRow(
-                                  value: 'null',
-                                  property: 'screenId',
-                                ),
+                              ),
                             ],
                           ],
                         );
