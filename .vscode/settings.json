@@ -4,6 +4,8 @@
         "source.fixAll": "always"
     },
     "editor.formatOnSave": true,
+    "editor.insertSpaces": false,
+    "editor.rulers": [80],
     "lldb.displayFormat": "auto",
     "lldb.showDisassembly": "auto",
     "lldb.dereferencePointers": true,
@@ -18,4 +20,5 @@
     "dart.analysisExcludedFolders": [
         ".flutter_sdk",
     ],
+    "dart.lineLength": 80
 }
