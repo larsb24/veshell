@@ -36,6 +36,7 @@ jobs:
             git push
           else
             echo "No formatting changes to commit."
+          fi
 
       - name: Run static analysis
         uses: zgosalvez/github-actions-analyze-dart@v3
