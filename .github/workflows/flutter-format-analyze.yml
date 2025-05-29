@@ -36,7 +36,6 @@ jobs:
             git push
           else
             echo "No formatting changes to commit."
-        working-directory: src/shell
 
       - name: Run static analysis
         uses: zgosalvez/github-actions-analyze-dart@v3
