@@ -85,11 +85,7 @@ class PersistentWindowTileable extends Tileable {
                   window: window,
                   onTap: () {
                     primaryFocusNode.requestFocus();
-                    ref
-                        .read(
-                          persistentWindowStateProvider(windowId).notifier,
-                        )
-                        .launchSelf();
+                    ref.read(persistentWindowStateProvider(windowId).notifier).launchSelf();
                   },
                 ),
         ),
@@ -111,11 +107,7 @@ class PersistentWindowTileable extends Tileable {
 
         return GestureDetector(
           onTertiaryTapUp: (_) {
-            ref
-                .read(
-                  windowManagerProvider.notifier,
-                )
-                .closeWindow(window.windowId);
+            ref.read(windowManagerProvider.notifier).closeWindow(window.windowId);
           },
           child: MouseRegion(
             onEnter: (event) => isHoverState.value = true,
@@ -164,10 +156,7 @@ class PersistentWindowTileable extends Tileable {
                                 iconSize: 16,
                                 onPressed: () {
                                   ref
-                                      .read(
-                                        windowManagerProvider.notifier,
-                                      )
-                                      .closeWindow(window.windowId);
+                                      .read(windowManagerProvider.notifier).closeWindow(window.windowId);
                                 },
                                 icon: const Icon(MdiIcons.close),
                               )
